@@ -1,0 +1,7 @@
+{
+  "watch": ["src", "public"],
+  "ignore": ["src/**/*.test.ts"],
+  "ext": "ts,mts,tsx,mjs,js,jsx,json",
+  "exec": "rm -rf dist && tsx esbuild.ts development && node dist/src",
+  "legacyWatch": true
+}

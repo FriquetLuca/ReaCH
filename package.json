@@ -1,0 +1,30 @@
+{
+  "name": "reachp",
+  "version": "1.0.0",
+  "description": "JS but PHP like",
+  "scripts": {
+    "dev": "nodemon",
+    "build:server": "rm -rf build && tsx esbuild.ts",
+    "start": "npm build:server && node build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/autoload": "^5.7.1",
+    "@fastify/static": "^6.10.2",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.18.0",
+    "fastify-plugin": "^4.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.2",
+    "esbuild": "^0.18.10",
+    "nodemon": "^2.0.22",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.3"
+  }
+}
